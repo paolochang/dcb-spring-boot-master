@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="doctor" class="com.paolochang.Doctor">
+        <!-- construction injection -->
+        <constructor-arg value="MBBS"></constructor-arg>
+    </bean>
+    <bean id="nurse" class="com.paolochang.Nurse">
+        <!-- saturn injection -->
+        <property name="shift" value="daytime"></property>
+    </bean>
+</beans>
